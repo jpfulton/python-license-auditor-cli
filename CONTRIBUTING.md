@@ -4,7 +4,7 @@ Thanks for being here! Contributions to this project are both welcome and encour
 
 ## Opening an Issue
 
-All contributions start with [an issue](https://github.com/jpfulton/node-license-auditor-cli/issues/new/choose).
+All contributions start with [an issue](https://github.com/jpfulton/python-license-auditor-cli/issues/new/choose).
 Even if you have a good idea of what the problem is and what the solution looks like,
 please open an issue. This will give us an opportunity to align on the problem and solution.
 Templates are available for both bug reports and feature requests.
@@ -17,13 +17,13 @@ To get started:
 
 **Step 1: Fork this repo**
 
-Fork by clicking [here](https://github.com/jpfulton/node-license-auditor-cli/fork).
+Fork by clicking [here](https://github.com/jpfulton/python-license-auditor-cli/fork).
 
 **Step 2: Clone your fork and open in VSCode**
 
 ```sh
 git clone <your fork>
-cd node-license-auditor-cli
+cd python-license-auditor-cli
 code .
 ```
 
