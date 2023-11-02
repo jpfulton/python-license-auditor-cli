@@ -41,4 +41,5 @@ export interface Metadata {
   requires_python: string;
   description_content_type: string;
   description: string;
+  project_urls: string[];
 }
