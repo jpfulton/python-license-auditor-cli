@@ -147,7 +147,7 @@ export const pythonLicenseAuditor = async (
     }
   } catch (err) {
     fail(
-      `[java-license-auditor-cli] Failed to audit licenses with error: ${
+      `[python-license-auditor-cli] Failed to audit licenses with error: ${
         (err as Error).message
       }`
     );
