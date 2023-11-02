@@ -1,0 +1,1 @@
+export { parserFactory } from "./parseLicenses";
