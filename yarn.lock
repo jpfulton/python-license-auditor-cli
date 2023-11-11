@@ -1799,12 +1799,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jpfulton/license-auditor-common@npm:^0.0.8":
-  version: 0.0.8
-  resolution: "@jpfulton/license-auditor-common@npm:0.0.8"
+"@jpfulton/license-auditor-common@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "@jpfulton/license-auditor-common@npm:0.0.9"
   dependencies:
     node-fetch: 2
-  checksum: 66e595335c57d2b6efd2729a51eb73899aff57a3fbee068c177356b4af482c2d29275abecddfbdf5ad7d3a4323831f751ae97e3c737bb41daf531150446f1e14
+  checksum: 95daf880262ec4a4478175c89b069c105a4358635c114a1d9466d36181c7d509ec9af5ae38e9f892bdf374aca7ad8549efa3260cb271dc7dff698e9bce7dcec3
   languageName: node
   linkType: hard
 
@@ -1818,7 +1818,7 @@ __metadata:
     "@babel/plugin-transform-runtime": ^7.22.15
     "@babel/preset-env": ^7.22.20
     "@babel/preset-typescript": ^7.22.15
-    "@jpfulton/license-auditor-common": ^0.0.8
+    "@jpfulton/license-auditor-common": ^0.0.9
     "@tsconfig/node18": ^18.2.1
     "@types/jest": ^29.5.5
     "@types/node": ^20.5.7

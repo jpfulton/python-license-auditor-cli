@@ -44,7 +44,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@jpfulton/license-auditor-common": "^0.0.8",
+    "@jpfulton/license-auditor-common": "^0.0.9",
     "commander": "^11.0.0",
     "node-fetch": "^2.0.0",
     "node-html-parser": "^6.1.10"
