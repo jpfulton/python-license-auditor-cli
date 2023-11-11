@@ -36,6 +36,21 @@ export const parserFactory =
     const warnOutputs: string[] = [];
     const whiteListOutputs: string[] = [];
 
+    // some python packages place the full text of the license in the license field
+    // these dependencies have DependencyLicense objects with a fullText property
+    // and are identified by the license "FULL TEXT"
+    dependencies.forEach((dependency) => {
+      dependency.licenses.forEach((depLicense) => {
+        if (depLicense.license === "FULL TEXT") {
+          // if the license is "FULL TEXT", then the full text is in the fullText property
+          // get the first line from the full text and use it as the license property value
+          const fullText = depLicense.fullText!;
+          const firstLine = fullText.split("\n")[0];
+          depLicense.license = firstLine;
+        }
+      });
+    });
+
     dependencies.forEach((dependency) => {
       const isWhitelisted = dependency.licenses.some((depLicense) =>
         whitelistedLicenses.includes(
