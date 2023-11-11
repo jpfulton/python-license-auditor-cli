@@ -41,6 +41,16 @@ export const convertPackageInfo = (
     publisher: authorString,
     repository: repositoryString,
     licenses: getLicensesFromMetadata(metadata).map((l) => {
+      // some python packages place the full text of the license in the license field
+      // if the license field is longer than 50 characters, it is probably the full text
+      if (l.length > 50) {
+        return {
+          license: "FULL TEXT",
+          url: home_page || "",
+          fullText: l,
+        };
+      }
+
       return {
         license: l,
         url: home_page || "",
